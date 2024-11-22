@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { TbSend, TbMapPinHeart, TbPhone, TbMail } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import emailjs from "emailjs-com"; // Thêm thư viện emailjs
 
 const Contact = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -60,29 +59,10 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Truyền tham số rõ ràng để đảm bảo template nhận đúng giá trị
-    const templateParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      message: formData.message,
-      to_name: "Phat", // Có thể thay bằng tên của người nhận nếu cần
-    };
-
-    emailjs
-      .send("service_pzpa4vt", "template_g7231dp", templateParams, "YUbD15eFK9QTzJM45")
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSubmitted(true); // Hiển thị thông báo gửi thành công
-          setFormData({ name: "", email: "", message: "" });
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-};
-
+    // Xử lý gửi email hoặc lưu trữ dữ liệu ở đây
+    setSubmitted(true);
+    setFormData({ name: "", email: "", message: "" });
+  };
 
   const bgClass = darkMode
     ? "from-white to-gray-300 text-gray-950"
