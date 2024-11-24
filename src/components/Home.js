@@ -59,7 +59,7 @@ const Home = () => {
 
   return (
     <div
-      className={`bg-gradient-to-tr ${bgClass} min-h-screen flex flex-col justify-center items-center text-center relative`}
+      className={`bg-gradient-to-tr ${bgClass} mt-10 min-h-screen flex flex-col justify-center items-center text-center relative`}
     >
       <motion.div
         className="flex flex-col justify-center items-center"

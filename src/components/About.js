@@ -76,7 +76,7 @@ const About = () => {
           </motion.h1>
           <span
             className={`absolute text-7xl z-0 whitespace-nowrap font-extrabold opacity-40 transform -translate-y-2 ${
-              darkMode ? "text-gray-300" : "text-gray-300"
+              darkMode ? "text-gray-400 opacity-20" : "text-gray-300"
             }`}
           >
             WORKS

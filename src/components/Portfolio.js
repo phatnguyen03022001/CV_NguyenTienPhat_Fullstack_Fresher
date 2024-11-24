@@ -232,7 +232,7 @@ const Portfolio = () => {
               <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
                 <div className="text-white text-center">
                   <h3 className="font-semibold text-xl">{project.title}</h3>
-                  <p className="text-gray-300 text-sm p-2">
+                  <p className="text-gray-300 text-xs p-2">
                     {project.description}
                   </p>
                   <button

@@ -70,7 +70,12 @@ const Contact = () => {
     };
 
     emailjs
-      .send("service_pzpa4vt", "template_g7231dp", templateParams, "YUbD15eFK9QTzJM45")
+      .send(
+        "service_pzpa4vt",
+        "template_g7231dp",
+        templateParams,
+        "YUbD15eFK9QTzJM45"
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -81,8 +86,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-};
-
+  };
 
   const bgClass = darkMode
     ? "from-white to-gray-300 text-gray-950"
@@ -112,7 +116,7 @@ const Contact = () => {
         </motion.h1>
         <span
           className={`absolute text-7xl z-0 whitespace-nowrap font-extrabold opacity-40 transform -translate-y-2 ${
-            darkMode ? "text-gray-300" : "text-gray-300"
+            darkMode ? "text-gray-400 opacity-20" : "text-gray-300"
           }`}
         >
           WORKS
@@ -227,12 +231,17 @@ const Contact = () => {
 
           {submitted && (
             <motion.p
-              className="mt-4 text-green-600 font-medium text-xs"
+              className="mt-4 text-green-600 font-medium text dark:text-green-500"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              Your message has been sent successfully!
+              Thank you for sending an email to Phat at
+              <span className="whitespace-nowrap font-bold">
+                {" "}
+                tipi10x@gmail.com
+              </span>
+              .<br /> Phat will contact you as soon as possible.
             </motion.p>
           )}
         </motion.div>
