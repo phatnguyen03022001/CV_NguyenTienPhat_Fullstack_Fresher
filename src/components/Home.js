@@ -59,12 +59,13 @@ const Home = () => {
 
   return (
     <div
-      className={`bg-gradient-to-tr ${bgClass} mt-10 min-h-screen flex flex-col justify-center items-center text-center relative`}
+      className={`bg-gradient-to-tr ${bgClass} min-h-screen mt-10 flex flex-col justify-center items-center text-center p-8`}
     >
       <motion.div
         className="flex flex-col justify-center items-center"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 1 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className="relative flex flex-col items-center mb-6">
@@ -79,7 +80,11 @@ const Home = () => {
               COME
             </span>
           </motion.h1>
-          <span className="absolute text-7xl whitespace-nowrap font-extrabold text-gray-300 opacity-40 transform -translate-y-2">
+          <span
+            className={`absolute text-7xl z-0 whitespace-nowrap font-extrabold opacity-20 transform -translate-y-2 ${
+              darkMode ? "text-gray-400 opacity-20" : "text-gray-300"
+            }`}
+          >
             WORKS
           </span>
         </div>
@@ -111,7 +116,9 @@ const Home = () => {
           <motion.img
             src={image1}
             alt="Nguyen Tien Phat"
-            className={`w-72 h-72 object-cover rounded-full shadow-lg border-4 ${darkMode? "border-gray-700":"border-gray-300"} `}
+            className={`w-72 h-72 object-cover rounded-full shadow-lg border-4 ${
+              darkMode ? "border-gray-700" : "border-gray-300"
+            } `}
             animate={{
               scale: isHovered ? 0.98 : 1,
               filter: isHovered ? "brightness(0.4)" : "brightness(1)",

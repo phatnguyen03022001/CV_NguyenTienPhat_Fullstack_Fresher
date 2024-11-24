@@ -115,7 +115,7 @@ const Contact = () => {
           </span>
         </motion.h1>
         <span
-          className={`absolute text-7xl z-0 whitespace-nowrap font-extrabold opacity-40 transform -translate-y-2 ${
+          className={`absolute text-7xl z-0 whitespace-nowrap font-extrabold opacity-20 transform -translate-y-2 ${
             darkMode ? "text-gray-400 opacity-20" : "text-gray-300"
           }`}
         >
@@ -241,7 +241,7 @@ const Contact = () => {
                 {" "}
                 tipi10x@gmail.com
               </span>
-              .<br /> Phat will contact you as soon as possible.
+              <br /> Phat will contact you as soon as possible.
             </motion.p>
           )}
         </motion.div>

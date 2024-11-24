@@ -75,7 +75,7 @@ const About = () => {
             </span>
           </motion.h1>
           <span
-            className={`absolute text-7xl z-0 whitespace-nowrap font-extrabold opacity-40 transform -translate-y-2 ${
+            className={`absolute text-7xl z-0 whitespace-nowrap font-extrabold opacity-20 transform -translate-y-2 ${
               darkMode ? "text-gray-400 opacity-20" : "text-gray-300"
             }`}
           >
@@ -214,7 +214,7 @@ const About = () => {
                   <span className="text-xs text-gray-500">2023 - now</span>
                 </motion.h2>
                 <motion.div
-                  className="grid grid-cols-3 gap-3 justify-items-center w-full"
+                  className="grid grid-cols-3 gap-3 justify-items-center w-full whitespace-nowrap"
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: 100 }}
@@ -225,7 +225,7 @@ const About = () => {
                     "ReactJS",
                     "MongoDB",
                     "MySQL",
-                    "Tailwind CSS",
+                    "Tailwind",
                     "Bootstrap",
                     "Docker",
                     "Others",
