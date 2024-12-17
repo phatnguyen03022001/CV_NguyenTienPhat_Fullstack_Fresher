@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
 
 import image1 from "../images/avatar/avt.jpg";
-import cv from "../files/CV_NguyenTienPhat_fullstack_fresher.pdf";
+import cv from "../files/CV.pdf";
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -59,22 +59,19 @@ const Home = () => {
 
   return (
     <div
-      className={`bg-gradient-to-tr ${bgClass} min-h-screen mt-10 flex flex-col justify-center items-center text-center p-8`}
-    >
+      className={`bg-gradient-to-tr ${bgClass} min-h-screen mt-10 flex flex-col justify-center items-center text-center p-8`}>
       <motion.div
         className="flex flex-col justify-center items-center"
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+        transition={{ duration: 0.5 }}>
         <div className="relative flex flex-col items-center mb-6">
           <motion.h1
             className={`text-4xl mt-2 z-10 font-extrabold ${textClass}`}
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
+            transition={{ duration: 0.5 }}>
             WEL
             <span className={`${darkMode ? "text-yellow-500" : "text-white"}`}>
               COME
@@ -83,8 +80,7 @@ const Home = () => {
           <span
             className={`absolute text-7xl z-0 whitespace-nowrap font-extrabold opacity-20 transform -translate-y-2 ${
               darkMode ? "text-gray-400 opacity-20" : "text-gray-300"
-            }`}
-          >
+            }`}>
             WORKS
           </span>
         </div>
@@ -93,8 +89,7 @@ const Home = () => {
           className="text-3xl font-thinbold"
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-        >
+          transition={{ duration: 0.5, delay: 0.1 }}>
           Hi, I'm Nguyen Tien Phat
         </motion.h3>
 
@@ -102,8 +97,7 @@ const Home = () => {
           className="text-sm mt-2 mb-4 font-thin"
           initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
+          transition={{ duration: 0.5, delay: 0.2 }}>
           A passionate Web Developer & Designer
         </motion.p>
 
@@ -111,8 +105,7 @@ const Home = () => {
         <motion.div
           className="relative mt-10 mb-6"
           onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
+          onMouseLeave={() => setIsHovered(false)}>
           <motion.img
             src={image1}
             alt="Nguyen Tien Phat"
@@ -133,15 +126,13 @@ const Home = () => {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
-                transition={{ duration: 0.2 }}
-              >
+                transition={{ duration: 0.2 }}>
                 <motion.a
                   href={cv}
                   download="CV_NguyenTienPhat_fullstack_fresher.pdf"
                   className="group relative flex items-center justify-center bg-red-600 hover:bg-red-700 text-white rounded-full p-4 shadow-lg"
                   whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                >
+                  whileTap={{ scale: 0.95 }}>
                   <FaDownload size={28} />
                   <span className="absolute -top-8 transform -translate-x-1/2 bg-black/75 text-white text-xs rounded-md py-1 px-2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                     Download CV
@@ -158,8 +149,7 @@ const Home = () => {
           } max-w-xl text-lg p-4`}
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
+          transition={{ duration: 0.5, delay: 0.4 }}>
           I'm seeking a challenging intern position where I can enhance my
           skills in web development and create impactful applications that
           contribute to business growth.
@@ -171,12 +161,10 @@ const Home = () => {
             whileTap={{ scale: 0.95 }}
             className="inline-block"
             animate={shake ? { x: [0, 15, -15, 0], y: 5 } : {}}
-            transition={{ duration: 0.3 }}
-          >
+            transition={{ duration: 0.3 }}>
             <Link
               to="/portfolio"
-              className="bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-300 transition duration-200"
-            >
+              className="bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-300 transition duration-200">
               View My Portfolio
             </Link>
           </motion.div>

@@ -66,7 +66,7 @@ const Contact = () => {
       from_name: formData.name,
       from_email: formData.email,
       message: formData.message,
-      to_name: "Phat", // Có thể thay bằng tên của người nhận nếu cần
+      to_name: "Phat",
     };
 
     emailjs
@@ -100,15 +100,13 @@ const Contact = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+      transition={{ duration: 0.5 }}>
       <div className="relative flex flex-col items-center mb-6">
         <motion.h1
           className={`text-4xl mt-2 z-10 font-extrabold ${textClass}`}
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+          transition={{ duration: 0.5 }}>
           GET IN{" "}
           <span className={`${darkMode ? "text-yellow-500" : "text-white"}`}>
             TOUCH
@@ -117,8 +115,7 @@ const Contact = () => {
         <span
           className={`absolute text-7xl z-0 whitespace-nowrap font-extrabold opacity-20 transform -translate-y-2 ${
             darkMode ? "text-gray-400 opacity-20" : "text-gray-300"
-          }`}
-        >
+          }`}>
           WORKS
         </span>
       </div>
@@ -129,11 +126,9 @@ const Contact = () => {
           }`}
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+          transition={{ duration: 0.5 }}>
           <p
-            className={`text-5xl font-bold mb-6 leading-relaxed flex items-center`}
-          >
+            className={`text-5xl font-bold mb-6 leading-relaxed flex items-center`}>
             Don't be shy!
           </p>
           <p className={`text-lg font-thin mb-6 leading-relaxed`}>
@@ -161,8 +156,7 @@ const Contact = () => {
           }`}
           initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+          transition={{ duration: 0.5 }}>
           <form onSubmit={handleSubmit} className="space-y-6">
             <h1 className="text-3xl font-extrabold text-center">
               Enter Details
@@ -171,8 +165,7 @@ const Contact = () => {
               <div className="w-1/2 pr-2">
                 <label
                   className="block text-sm font-semibold text-left"
-                  htmlFor="name"
-                >
+                  htmlFor="name">
                   Full Name
                 </label>
                 <input
@@ -189,8 +182,7 @@ const Contact = () => {
               <div className="w-1/2 pl-2">
                 <label
                   className="block text-sm font-semibold text-left"
-                  htmlFor="email"
-                >
+                  htmlFor="email">
                   Email
                 </label>
                 <input
@@ -208,8 +200,7 @@ const Contact = () => {
             <div>
               <label
                 className="block text-sm font-semibold text-left"
-                htmlFor="message"
-              >
+                htmlFor="message">
                 Message
               </label>
               <textarea
@@ -223,8 +214,7 @@ const Contact = () => {
             </div>
             <motion.button
               type="submit"
-              className="bg-indigo-700 text-white py-2 px-4 rounded hover:bg-indigo-600 transition duration-200"
-            >
+              className="bg-indigo-700 text-white py-2 px-4 rounded hover:bg-indigo-600 transition duration-200">
               <TbSend className="inline mr-2" /> Send Message
             </motion.button>
           </form>
@@ -234,12 +224,11 @@ const Contact = () => {
               className="mt-4 text-green-600 font-medium text dark:text-green-500"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              Thank you for sending an email to Phat at
+              transition={{ duration: 0.5 }}>
+              Thank you for sending an email to Phat
               <span className="whitespace-nowrap font-bold">
                 {" "}
-                tipi10x@gmail.com
+                {formData.message}
               </span>
               <br /> Phat will contact you as soon as possible.
             </motion.p>
@@ -256,8 +245,7 @@ const Contact = () => {
         >
           <Link
             to="/"
-            className="bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-300 transition duration-200"
-          >
+            className="bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-300 transition duration-200">
             Go Back Home
           </Link>
         </motion.div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { TbDownload } from "react-icons/tb";
-import cv from "../files/CV_NguyenTienPhat_fullstack_fresher.pdf";
+import cv from "../files/CV.pdf";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -59,16 +59,14 @@ const About = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+      transition={{ duration: 0.5 }}>
       <div className="container mx-auto p-6">
         <div className="relative flex flex-col items-center mb-6">
           <motion.h1
             className={`text-4xl mt-2 z-10 font-extrabold ${textClass}`}
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
+            transition={{ duration: 0.5 }}>
             ABOUT{" "}
             <span className={`${darkMode ? "text-yellow-500" : "text-white"}`}>
               ME
@@ -77,8 +75,7 @@ const About = () => {
           <span
             className={`absolute text-7xl z-0 whitespace-nowrap font-extrabold opacity-20 transform -translate-y-2 ${
               darkMode ? "text-gray-400 opacity-20" : "text-gray-300"
-            }`}
-          >
+            }`}>
             WORKS
           </span>
         </div>
@@ -90,8 +87,7 @@ const About = () => {
               className="text-xl font-bold mb-2 text-gray-800"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
+              transition={{ duration: 0.5, delay: 0.2 }}>
               Personal Information
             </motion.h2>
             <ul className="space-y-0">
@@ -111,8 +107,7 @@ const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Visit my Facebook profile"
-                      className="text-blue-500 hover:text-blue-700 transition-colors duration-200"
-                    >
+                      className="text-blue-500 hover:text-blue-700 transition-colors duration-200">
                       See details
                     </a>
                   ),
@@ -125,8 +120,7 @@ const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Visit my Facebook profile"
-                      className="text-blue-500 hover:text-blue-700 transition-colors duration-200"
-                    >
+                      className="text-blue-500 hover:text-blue-700 transition-colors duration-200">
                       See details
                     </a>
                   ),
@@ -134,8 +128,7 @@ const About = () => {
               ].map((item, index) => (
                 <li
                   key={index}
-                  className="flex justify-between items-center py-2 px-2 border-b border-gray-100 hover:bg-gray-50 transition-all duration-200 rounded-lg"
-                >
+                  className="flex justify-between items-center py-2 px-2 border-b border-gray-100 hover:bg-gray-50 transition-all duration-200 rounded-lg">
                   <strong className="text-gray-700">{item.label}:</strong>
                   <span className="text-gray-600">{item.value}</span>
                 </li>
@@ -151,9 +144,8 @@ const About = () => {
             >
               <a
                 href={cv}
-                download="CV_NguyenTienPhat_fullstack_fresher.pdf" 
-                className="flex items-center bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300"
-              >
+                download="CV_NguyenTienPhat_fullstack_fresher.pdf"
+                className="flex items-center bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
                 <TbDownload className="mr-2" />
                 Download CV
               </a>
@@ -169,14 +161,14 @@ const About = () => {
                   className="text-xl font-bold mb-2 text-gray-800 flex justify-between items-center"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                >
+                  transition={{ duration: 0.5, delay: 0.4 }}>
                   <div className="flex items-center">Education</div>
                   <span className="text-xs text-gray-500">09/2019 - now</span>
                 </motion.h2>
                 <p className="text-gray-600 leading-relaxed text-sm text-left border-b pb-6">
                   Currently studying at{" "}
-                  <strong>Ton Duc Thang University</strong>,  majoring in <strong>Software Engineering</strong>, with a focus on
+                  <strong>Ton Duc Thang University</strong>, majoring in{" "}
+                  <strong>Software Engineering</strong>, with a focus on
                   enhancing my skills and knowledge in the field.
                 </p>
               </div>
@@ -186,15 +178,12 @@ const About = () => {
                   className="text-xl font-bold mt-6 mb-2 text-gray-800 flex justify-between items-center"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.6 }}
-                >
+                  transition={{ duration: 0.5, delay: 0.6 }}>
                   Experience
-                  <span className="text-xs text-gray-500">
-                    03 - 07/2024
-                  </span>
+                  <span className="text-xs text-gray-500">03 - 07/2024</span>
                 </motion.h2>
                 <p className="text-gray-600 leading-relaxed text-sm text-left border-b pb-6">
-                  I have gained <strong>0.5 years of experience</strong> working
+                  I have gained <strong>2 months of experience</strong> working
                   in the industry, during which I developed my skills and
                   contributed to various projects, including an impactful
                   internship at <strong>MiuTech Company</strong>. This
@@ -208,8 +197,7 @@ const About = () => {
                   className="text-xl font-bold mt-10 mb-4 text-gray-800 flex justify-between items-center"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.8 }}
-                >
+                  transition={{ duration: 0.5, delay: 0.8 }}>
                   Technologies
                   <span className="text-xs text-gray-500">2023 - now</span>
                 </motion.h2>
@@ -217,8 +205,7 @@ const About = () => {
                   className="grid grid-cols-3 gap-3 justify-items-center w-full whitespace-nowrap"
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: 100 }}
-                >
+                  exit={{ opacity: 0, x: 100 }}>
                   {[
                     "NodeJS",
                     "ExpressJS",
@@ -238,8 +225,7 @@ const About = () => {
                           : "bg-gray-800 text-white"
                       }`}
                       whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
+                      whileTap={{ scale: 0.95 }}>
                       <span className="text-xs font-medium">{tech}</span>
                     </motion.div>
                   ))}
@@ -258,8 +244,7 @@ const About = () => {
           >
             <Link
               to="/contact"
-              className="bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-300 transition duration-200"
-            >
+              className="bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-300 transition duration-200">
               Contact Me
             </Link>
           </motion.div>
