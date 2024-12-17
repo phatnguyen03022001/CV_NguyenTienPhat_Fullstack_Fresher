@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { TbDownload } from "react-icons/tb";
-import cv from "../files/CV.pdf";
+import cv from "../files/CV_NguyenTienPhat_fullstack_intern.pdf";
 import { Link } from "react-router-dom";
 
 const About = () => {
