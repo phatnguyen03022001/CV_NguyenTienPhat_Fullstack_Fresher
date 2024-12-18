@@ -65,7 +65,7 @@ const Portfolio = () => {
   const projectDetails = [
     {
       title: "English Exam Bank",
-      time: "02 - 05/2024",
+      time: "06-08/2024",
       description:
         "The website serves 3 types of users: Heads, Teachers and Students. English Exam Bank offers a comprehensive exam management solution with features like custom exam creation, vast question banks, and detailed analytics.",
       images: [H_1, H_2, H_3, H_4, H_5, H_6, S_1, S_2, S_3, T_1, T_2, T_3],
@@ -78,7 +78,7 @@ const Portfolio = () => {
     },
     {
       title: "Hotel Management",
-      time: "02 - 05/2024",
+      time: "02 - 05/2023",
       description:
         "Experience seamless hotel management with our intuitive platform. Designed for both Administrators and Guests, our system streamlines operations and enhances the guest experience. From check-in to check-out, we provide a smooth journey for every visitor.",
       images: [A_1, A_2, A_3, A_4, A_5, A_6, C_1, C_2, C_3],
@@ -91,7 +91,7 @@ const Portfolio = () => {
     },
     {
       title: "RealChat",
-      time: "02 - 05/2024",
+      time: "03/2024",
       description:
         "This project is an application that allows users to chat in real time.",
       images: [U_1, U_2],
@@ -161,16 +161,14 @@ const Portfolio = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+      transition={{ duration: 0.5 }}>
       <div className="container mx-auto p-6 mt-20">
         <div className="relative flex flex-col items-center mb-6">
           <motion.h1
             className={`text-4xl mt-2 z-10 font-extrabold ${textClass}`}
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
+            transition={{ duration: 0.5 }}>
             MY{" "}
             <span className={`${darkMode ? "text-yellow-500" : "text-white"}`}>
               PORTFOLIO
@@ -179,8 +177,7 @@ const Portfolio = () => {
           <span
             className={`absolute text-7xl z-0 whitespace-nowrap font-extrabold opacity-20 transform -translate-y-2 ${
               darkMode ? "text-gray-400 opacity-20" : "text-gray-300"
-            }`}
-          >
+            }`}>
             WORKS
           </span>
         </div>
@@ -188,8 +185,7 @@ const Portfolio = () => {
         <p
           className={`mt-2 text-center mb-8 ${
             darkMode ? "text-gray-800" : "text-white"
-          }`}
-        >
+          }`}>
           Here are some of my projects about:{" "}
         </p>
 
@@ -197,16 +193,14 @@ const Portfolio = () => {
           className="flex justify-center text-sm space-x-2 mb-4"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 100 }}
-        >
+          exit={{ opacity: 0, x: 100 }}>
           {["NodeJS", "ExpressJS", "ReactJS", "MongoDB", "MySQL"].map(
             (tech) => (
               <div
                 key={tech}
                 className={`p-2 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 ${
                   darkMode ? "bg-gray-300 text-black" : "bg-gray-600 text-white"
-                }`}
-              >
+                }`}>
                 {tech}
               </div>
             )
@@ -241,8 +235,7 @@ const Portfolio = () => {
                       setCurrentProjectIndex(index);
                       setCurrentImageIndex(0);
                     }}
-                    className="mt-2 bg-yellow-400 text-black px-4 py-2 text-sm rounded hover:bg-yellow-300 transition"
-                  >
+                    className="mt-2 bg-yellow-400 text-black px-4 py-2 text-sm rounded hover:bg-yellow-300 transition">
                     See detail
                   </button>
                 </div>
@@ -255,12 +248,10 @@ const Portfolio = () => {
         {modalOpen && (
           <div
             className="fixed inset-0 z-20 flex items-center justify-center bg-black bg-opacity-70"
-            onClick={() => setModalOpen(false)}
-          >
+            onClick={() => setModalOpen(false)}>
             <div
               className="bg-white mt-14 rounded-lg p-6 shadow-lg transition-transform transform scale-105 max-w-5xl w-full"
-              onClick={(e) => e.stopPropagation()}
-            >
+              onClick={(e) => e.stopPropagation()}>
               <h2 className="relative font-semibold text-2xl mb-1 text-gray-800 text-center">
                 {projectDetails[currentProjectIndex].title}
                 <span className="absolute right-0 text-xs text-gray-500">
@@ -290,8 +281,7 @@ const Portfolio = () => {
                 href={projectDetails[currentProjectIndex].links}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-1 flex items-center justify-center text-blue-500 hover:underline whitespace-nowrap"
-              >
+                className="mt-1 flex items-center justify-center text-blue-500 hover:underline whitespace-nowrap">
                 <TbLink className="mr-1" />
                 <span>View project (github)</span>
               </a>
@@ -299,8 +289,7 @@ const Portfolio = () => {
               <div className="mt-4 flex items-center justify-center relative text-gray-500">
                 <button
                   onClick={prevImage}
-                  className="absolute left-0 z-40 hover:scale-150 p-3 rounded-full transition flex items-center justify-center"
-                >
+                  className="absolute left-0 z-40 hover:scale-150 p-3 rounded-full transition flex items-center justify-center">
                   <TbPlayerSkipBack size={20} />
                 </button>
 
@@ -316,21 +305,19 @@ const Portfolio = () => {
 
                 <button
                   onClick={nextImage}
-                  className="absolute right-0 z-40 hover:scale-150 p-3 rounded-full transition flex items-center justify-center"
-                >
+                  className="absolute right-0 z-40 hover:scale-150 p-3 rounded-full transition flex items-center justify-center">
                   <TbPlayerSkipForward size={20} />
                 </button>
               </div>
 
-              <p className="mt-2 text-gray-500 px-4 py-1 rounded-lg hover:bg-red-500 text-xs transition">
+              <p className="mt-2 text-gray-500 px-4 py-1 rounded-lg text-xs transition">
                 {currentImageIndex + 1} /{" "}
                 {projectDetails[currentProjectIndex].images.length}
               </p>
 
               <button
                 onClick={() => setModalOpen(false)}
-                className="mt-2 bg-red-600 text-white px-4 py-1 rounded-lg hover:bg-red-500 text-xs transition"
-              >
+                className="mt-2 bg-red-600 text-white px-4 py-1 rounded-lg hover:bg-red-500 text-xs transition">
                 Close
               </button>
             </div>
@@ -350,12 +337,10 @@ const Portfolio = () => {
                 y: 0,
                 transition: { duration: 0.3 },
                 ...(shake ? { x: [0, 15, -15, 0], y: 5 } : {}), // Thêm lắc nếu cần
-              }}
-            >
+              }}>
               <Link
                 to="/about"
-                className="bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-300 transition duration-200"
-              >
+                className="bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-300 transition duration-200">
                 About Me
               </Link>
             </motion.div>
