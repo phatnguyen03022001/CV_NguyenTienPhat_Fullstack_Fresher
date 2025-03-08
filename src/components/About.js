@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { TbDownload } from "react-icons/tb";
-import cv from "../files/CV_NguyenTienPhat_fullstack_intern.pdf";
+import cv from "../files/NguyenTienPhat_FullStack_Intern.pdf";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -144,7 +144,7 @@ const About = () => {
             >
               <a
                 href={cv}
-                download="CV_NguyenTienPhat_fullstack_fresher.pdf"
+                download="NguyenTienPhat_Fullstack_Intern.pdf"
                 className="flex items-center bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
                 <TbDownload className="mr-2" />
                 Download CV
@@ -180,7 +180,7 @@ const About = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.6 }}>
                   Experience
-                  <span className="text-xs text-gray-500">03 - 07/2024</span>
+                  <span className="text-xs text-gray-500">04 - 06/2024</span>
                 </motion.h2>
                 <p className="text-gray-600 leading-relaxed text-sm text-left border-b pb-6">
                   I have gained <strong>2 months of experience</strong> working
