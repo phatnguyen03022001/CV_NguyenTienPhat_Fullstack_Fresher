@@ -100,13 +100,13 @@ const About = () => {
                 { label: "Gender", value: "Male" },
                 { label: "Address", value: "Ho Chi Minh City" },
                 {
-                  label: "Facebook",
+                  label: "Linkedin",
                   value: (
                     <a
-                      href="https://www.facebook.com/tienphaf/"
+                      href="https://www.linkedin.com/in/phatnguyen03022001/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      title="Visit my Facebook profile"
+                      title="Visit my Linkedin profile"
                       className="text-blue-500 hover:text-blue-700 transition-colors duration-200">
                       See details
                     </a>
