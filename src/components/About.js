@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { TbDownload } from "react-icons/tb";
-import cv from "../files/NguyenTienPhat_FullStack_Intern.pdf";
+import cv from "../files/NguyenTienPhat_Fresher_Fullstack_Developer.pdf";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -144,7 +144,7 @@ const About = () => {
             >
               <a
                 href={cv}
-                download="NguyenTienPhat_Fullstack_Intern.pdf"
+                download="NguyenTienPhat_Fresher_Fullstack_Developer"
                 className="flex items-center bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
                 <TbDownload className="mr-2" />
                 Download CV

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
 
 import image1 from "../images/avatar/avt.jpg";
-import cv from "../files/NguyenTienPhat_FullStack_Intern.pdf";
+import cv from "../files/NguyenTienPhat_Fresher_Fullstack_Developer.pdf";
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -130,7 +130,7 @@ const Home = () => {
                 transition={{ duration: 0.2 }}>
                 <motion.a
                   href={cv}
-                  download="NguyenTienPhat_Fullstack_Intern.pdf"
+                  download="NguyenTienPhat_Fresher_Fullstack_Developer"
                   className="group relative flex items-center justify-center bg-red-600 hover:bg-red-700 text-white rounded-full p-4 shadow-lg"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}>
