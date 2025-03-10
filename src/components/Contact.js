@@ -214,7 +214,16 @@ const Contact = () => {
             </div>
             <motion.button
               type="submit"
-              className="bg-indigo-700 text-white py-2 px-4 rounded hover:bg-indigo-600 transition duration-200">
+              // "bg-indigo-200 text-white :bg-indigo-700 py-2 px-4 rounded hover:bg-indigo-600 transition duration-200"
+              // className={`lg:w-3/5 rounded-lg p-6 ${
+              //   darkMode ? "bg-gray-500 text-white" : "bg-gray-200 text-black"
+              // }`}
+              className={`"bg-indigo-200 text-white py-2 px-4 rounded hover:bg-indigo-600 transition duration-200"
+                ${
+                  darkMode
+                    ? "bg-sky-400 text-black"
+                    : "bg-indigo-700 text-black"
+                }`}>
               <TbSend className="inline mr-2" /> Send Message
             </motion.button>
           </form>

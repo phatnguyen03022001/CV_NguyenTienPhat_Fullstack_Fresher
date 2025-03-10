@@ -102,6 +102,7 @@ const Home = () => {
         </motion.p>
 
         {/* Image with Download CV Section */}
+
         <motion.div
           className="relative mt-10 mb-6"
           onMouseEnter={() => setIsHovered(true)}
@@ -146,13 +147,15 @@ const Home = () => {
         <motion.p
           className={`mt-4 ${
             darkMode ? "text-black" : "text-white"
-          } max-w-xl text-lg p-4`}
+          } max-w-5xl text-sm p-4`}
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}>
-          I'm seeking a challenging intern position where I can enhance my
-          skills in web development and create impactful applications that
-          contribute to business growth.
+          Hello! I'm Phat, a passionate web developer with background in MERN
+          Stack (MongoDB, Express.js, React.js, Node.js) and experience working
+          with both SQL & NoSQL databases. I hope to join a large-scale web
+          application development project, apply modern technologies and
+          contribute to creating valuable products for users.
         </motion.p>
 
         <div className="mt-6 flex space-x-4">
